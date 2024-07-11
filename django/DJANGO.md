@@ -1,8 +1,8 @@
 <div style="text-align: center;" markdown="1">
 
-# Installing the **django** correctly
+# Installing the `django` correctly
 #
-![icons8-django-50.png](../assets/django/icons8-django-50.png) <span style="margin-right:50px" />
+![icons8-django-50.png](../assets/django/icons8-django-50.png)
 ![icons8-linux.gif](../assets/django/icons8-linux.gif)
 </div>
 
@@ -75,14 +75,58 @@ django-admin
 > List all commands of Django.
 > ![django-admin.png](../assets/django/django-admin.png)
 > 
+
+### Let's create a new project
+
+1)
 ```shell
 django-admin startproject web
 ```
 
 > [!NOTE]
-> **django-admin startproject** => Command to create the project
+> **django-admin startproject** ⇢ Command to create the project
 > 
-> **web** => Project Name
+> **web** ⇢ Project Name
 > 
 > This command created a new project.
 > ![start-project.png](../assets/django/start-project.png)
+2)
+> Enter the project folder.
+![cd-web.png](../assets/django/cd-web.png)
+
+3)
+
+> [!IMPORTANT]
+> Opens the `settings.py` file and comments on the `DATABASES`
+
+<details>
+    <summary> File location </summary>
+    a) <img width="50px" src="../assets/django/1.png" />
+    b) <img width="50px" src="../assets/django/2.png" />
+    c) <img width="50px" src="../assets/django/3.png" />
+    d) <img width="50px" src="../assets/django/4.png" />
+    e) <img width="50px" src="../assets/django/5.png" />
+</details>
+
+> [!CAUTION]
+> Before
+> ![before.png](../assets/django/before.png)
+
+> [!TIP]
+> After
+> ![after.png](../assets/django/after.png)
+
+
+ Now run the `manage.py` file
+```shell
+python manage.py runserver
+```
+ > [!NOTE]
+ > You are to be congratulated now you have your first Django project installed.
+ 
+![run.png](../assets/django/run.png)
+![localhost.png](../assets/django/localhost.png)
+![admin.png](../assets/django/admin.png)
+
+#
+![Congratulations.gif](../assets/gifts/Congratulations.gif)
