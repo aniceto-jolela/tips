@@ -1,6 +1,6 @@
 <div style="text-align: center;" markdown="1">
 
-# Installing the `django`
+# Installing the `django` correctly
 #
 ![icons8-django-50.png](../assets/django/icons8-django-50.png)
 ![icons8-linux.gif](../assets/django/icons8-linux.gif)
@@ -27,20 +27,30 @@ sudo apt update
 > [!CAUTION]
 > Avoids installing Django in the global virtual environment of the operational system. Create your own virtual environment to avoid conflict with __root__.
 
+#### Now install [Anaconda](https://www.anaconda.com/download), after which you can continue with the tutorial.⇣⇣⇣
+
 ### Let's create a new environment variable.
 #
 - Step 1
 ```shell
-python3 -m venv ~/web_env
+python3 -m venv ~/my_environment_env
+```
+or
+```shell
+python -m venv ~/my_environment_env
+```
+or also
+```shell
+python -m venv my_environment_env
 ```
 > [!NOTE]
 > **python3 -m venv** ⇢ Command to create the virtual environment.
 > 
 > > **~/** ⇢ Virtual environment path.
 > 
-> **web_env** ⇢ Virtual environment Name.
+> **my_environment_env** ⇢ Virtual environment Name.
 > 
-![create-env.png](../assets/django/create-env.png)
+![0.png](../assets/django/anaconda/0.png)
 - Step 2
 
 > [!WARNING]
@@ -49,9 +59,10 @@ python3 -m venv ~/web_env
 >The final step in setting up your virtual environment is to activate it:
 
 ```shell
-source ~/web_env/bin/activate
+source ~/my_environment_env/bin/activate
 ```
-![open-env.png](../assets/django/open-env.png)
+![1.png](../assets/django/anaconda/1.png)
+
 - Step 3
 
 > [!TIP]
@@ -60,65 +71,46 @@ source ~/web_env/bin/activate
 ```shell
 pip install django
 ```
-![django-install.png](../assets/django/django-install.png)
+![2.png](../assets/django/anaconda/2.png)
 - Step 4
 
 ```shell
 python -m django --version
 ```
-![version.png](../assets/django/version.png)
+![3.png](../assets/django/anaconda/3.png)
 - Step 5
 
 ```shell
 django-admin
 ```
 > List all commands of Django.
-> ![django-admin.png](../assets/django/django-admin.png)
+> ![4.png](../assets/django/anaconda/4.png)
 > 
 
 ### Let's create a new project
 
 1)
 ```shell
-django-admin startproject web
+django-admin startproject store
 ```
 
 > [!NOTE]
 > **django-admin startproject** ⇢ Command to create the project
 > 
-> **web** ⇢ Project Name
+> **store** ⇢ Project Name
 > 
 > This command created a new project.
-> ![start-project.png](../assets/django/start-project.png)
+> ![5.png](../assets/django/anaconda/5.png)
 2)
 > Enter the project folder.
-![cd-web.png](../assets/django/cd-web.png)
+![6.png](../assets/django/anaconda/6.png)
 
 3)
-
-> [!IMPORTANT]
-> Opens the `settings.py` file and comments on the `DATABASES`
-
-<details>
-    <summary> File location </summary>
-    a) <img width="50px" src="../assets/django/1.png" />
-    b) <img width="50px" src="../assets/django/2.png" />
-    c) <img width="50px" src="../assets/django/3.png" />
-    d) <img width="50px" src="../assets/django/4.png" />
-    e) <img width="50px" src="../assets/django/5.png" />
-</details>
-
-> [!CAUTION]
-> Before
-> ![before.png](../assets/django/before.png)
-
-> [!CAUTION]
-> After
-> > If a database error appears, you can initially comment out this line of code.
-> > If you want to install **django**  correctly I suggest you see the following readme:
-> [DJANGO-ANACONDA.md](DJANGO-ANACONDA.md)
-> ![after.png](../assets/django/after.png)
-
+> Create the sqlite3 database
+```shell
+python3 manage.py migrate
+```
+![7.png](../assets/django/anaconda/7.png)
 
  Now run the `manage.py` file
 ```shell
@@ -127,9 +119,9 @@ python manage.py runserver
  > [!NOTE]
  > You are to be congratulated now you have your first Django project installed.
  
-![run.png](../assets/django/run.png)
-![localhost.png](../assets/django/localhost.png)
-![admin.png](../assets/django/admin.png)
+![8.png](../assets/django/anaconda/9.png)
+![10.png](../assets/django/anaconda/10.png)
+![11.png](../assets/django/anaconda/11.png)
 
 #
-![Congratulations.gif](../assets/gifts/Congratulations.gif)
+[1.webp](../assets/gifts/1.webp)
