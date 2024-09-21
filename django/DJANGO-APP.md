@@ -7,6 +7,8 @@
 
 #### Check if [Python](https://www.python.org/downloads/), [Anaconda](https://www.anaconda.com/download) and [Django](https://www.djangoproject.com/download/) Is Installed on Ubuntu
 
+>>>> if you want download to see all files [store.zip](store.zip)
+
 ### Let's create a new `app`.
 #
 - Step 1
