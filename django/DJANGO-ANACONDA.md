@@ -2,8 +2,8 @@
 
 # Installing the `django` correctly
 #
-![icons8-django-50.png](../assets/django/icons8-django-50.png)
-![icons8-linux.gif](../assets/django/icons8-linux.gif)
+![conda.png](../assets/django/anaconda/conda.png)
+
 </div>
 
 #### Check if Python Is Installed on Ubuntu
@@ -124,4 +124,4 @@ python manage.py runserver
 ![11.png](../assets/django/anaconda/11.png)
 
 #
-[1.webp](../assets/gifts/1.webp)
+[1.webp](../assets/gifts/1.gif)
