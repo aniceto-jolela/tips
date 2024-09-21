@@ -122,6 +122,8 @@ python manage.py runserver
 ![8.png](../assets/django/anaconda/9.png)
 ![10.png](../assets/django/anaconda/10.png)
 ![11.png](../assets/django/anaconda/11.png)
-
 #
-[1.webp](../assets/gifts/1.gif)
+#### app
+[DJANGO-APP.md](DJANGO-APP.md)
+
+![1.gif](../assets/gifts/1.gif)
