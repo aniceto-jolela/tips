@@ -51,3 +51,6 @@ Log in to `GitHub`.
 Go to Settings > `SSH` and `GPG keys` > New SSH key.
 
 Paste the copied key, give it a descriptive title, and save
+
+#
+[GPG KEY](GPG-KEYS.md)

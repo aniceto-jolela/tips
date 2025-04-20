@@ -20,7 +20,8 @@ gpg --list-secret-keys --keyid-format=long
 ```bash
 gpg --armor --export KEY_ID
 ```
-![Important] Copy the output (including the `-----BEGIN PGP PUBLIC KEY BLOCK-----` and `-----END PGP PUBLIC KEY BLOCK-----` lines).
+> [!IMPORTANT]
+> Copy the output (including the `-----BEGIN PGP PUBLIC KEY BLOCK-----` and `-----END PGP PUBLIC KEY BLOCK-----` lines).
 
 3. #### Add Your GPG Key to GitHub
 
